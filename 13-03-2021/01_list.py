@@ -15,5 +15,9 @@ print(places == people)  # compare one list with other
 # append in list
 nums = [1,5,9,3]
 nums.append(7)
-print(nums)
+print(nums[0:])
+
+# get the data by indexing in list
+List =[1,2,23,35,49,55]
+print(List[:3])
 
