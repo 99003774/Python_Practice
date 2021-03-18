@@ -30,6 +30,7 @@ a8 = a7.merge(a4, on = "PS number", how = "left")
 a9 = a8.merge(a5, on = "PS number", how = "left")
 
 # print(a9)
+
 #creating new excel file
 # a9.to_excel("Output.xlsx", index = False)
 # variable_1 = int(input("Enter PS number : "))
@@ -55,6 +56,8 @@ writer.book = book
 if 'Mastersheet' in book.sheetnames:
     ref = book['Mastersheet']
     book.remove(ref)
+
+
 res.to_excel(writer, sheet_name  = "Mastersheet")
 
 writer.save()
