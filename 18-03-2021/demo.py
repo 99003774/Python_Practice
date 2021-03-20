@@ -63,10 +63,14 @@ column2=workbook['Mastersheet'].max_column
 
 
 mas1=workbook['Mastersheet1']
+# Printing total number of rows in mastersheet 2
+mas1.cell(row=1,column=1).value="Total number of rows"
+# Printing total number of columns in mastersheet 2
+mas1.cell(row=3,column=1).value="Total number of columns"
 # Getting row value 
-mas1.cell(row=1,column=1).value=row_num
+mas1.cell(row=1,column=2).value=row_num
 # Getting column value
-mas1.cell(row=1,column=2).value=column2
+mas1.cell(row=3,column=2).value=column2
 # Saving the file.
 workbook.save(r"D:\Python_Practice-1\18-03-2021\Train_Data_New.xlsx")
 # Printing total number of rows.
